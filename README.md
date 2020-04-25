@@ -19,6 +19,7 @@
 * Now you can see the Visual Studio solution is in BUILD_vs2019. You can build it with Visual Studio and run the sample.
 
 
-
-
-   
+## 1 Cross compiling Android app on Windows
+Just like Urho3D, Gradle is used to build android application. Everything android related is put into `android` directory. MinGW is needed as an additional dependency on Windows.
+* Open `cmd` and `cd android` folder.
+* Executing `gradlew.bat build` or `gradlew.bat build --parallel` will build APK for you.
