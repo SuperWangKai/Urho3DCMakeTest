@@ -7,7 +7,7 @@
  * in the user guide at https://docs.gradle.org/4.10.3/userguide/multi_project_builds.html
  */
 
-rootProject.name = "LittleBoy"
+rootProject.name = "Urho3DCMakeTest"
 
 pluginManagement {
     resolutionStrategy {
