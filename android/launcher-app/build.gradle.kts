@@ -31,13 +31,10 @@ plugins {
 android {
     ndkVersion = ndkSideBySideVersion
     compileSdkVersion(29)
-    
-    var urhoLibDir = project.buildDir.toString() + "/../../../../Urho3D/android/urho3d-lib/build/"
+ldDir.toString() + "/../../../../Urho3D/android/urho3d-lib/build/"
     var gradleBuildDir = "-DGRADLE_BUILD_DIR=" + urhoLibDir
 
-    project.logger.lifecycle(gradleBuildDir)
-
-    defaultConfig {
+    project.logger.lifecycle(gradleBuildDir)    defaultConfig {
         minSdkVersion(18)
         targetSdkVersion(29)
         applicationId = "com.github.urho3d.cmaketest"
@@ -49,7 +46,6 @@ android {
                     System.getenv("ANDROID_CCACHE")?.let { add("-DANDROID_CCACHE=$it") }
                     //add("-DGRADLE_BUILD_DIR=$buildDir")
                     add(gradleBuildDir)
-
                 }
             }
         }

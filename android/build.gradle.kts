@@ -29,9 +29,7 @@ plugins {
 allprojects {
     group = "com.github.urho3d"
     version = "0.1"
-    description = """urho3d cmake test""".trimMargin().replace('\n', ' ')
-
-    repositories {
+    description = """urho3d cmake test""".trimMargin().replace('\n', ' ')    repositories {
         google()
         jcenter()
     }
