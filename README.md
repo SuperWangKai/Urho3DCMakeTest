@@ -20,6 +20,8 @@
 
 
 ## 2 Cross compiling Android app on Windows
-Just like Urho3D, Gradle is used to build android application. Everything android related is put into `android` directory. MinGW is needed as an additional dependency on Windows.
+Just like Urho3D, Gradle is used to build android application. Everything android related is put into `android` directory. Android SDK, Anroid NDK, MinGW and stuff are needed as dependencies on Windows. 
 * Open `cmd` and `cd android` folder.
 * Executing `gradlew.bat build` or `gradlew.bat build --parallel` will build APK for you.
+* Known issue - `Data`, `CoreData` etc. folders should be copied manually to `launcher-app/src/main/assets` directory.
+* If everything is correct, APKs can be found at `android/launcher-app/build/outputs/apk/`
